@@ -1,0 +1,39 @@
+.body {
+    background-color: #ddd5f0;
+    background-image: linear-gradient(to right, #ddd5f0, #ffffff);
+}
+
+.heading {
+    color: #a164f6;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 3s steps(13) 1 normal type;
+}
+
+@keyframes type{ 
+  from { width: 0px;}
+  to { width: 250px;}
+} 
+
+.para {
+    color: #a164f6;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+    animation: 3s steps(47) 4s 1 normal paraType;
+}
+
+@keyframes paraType{ 
+    from { 
+        width: 0px;
+        display:none
+    }
+    to { 
+        width: 450px;
+        display: block;
+        visibility: visible;
+    }
+  } 
